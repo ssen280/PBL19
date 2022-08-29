@@ -33,7 +33,7 @@ source ~/.bash_profile
 sudo yum install -y mod_ssl
 
 sudo openssl req -newkey rsa:2048 -nodes -keyout /etc/pki/tls/private/ACS.key -x509 -days 365 -out /etc/pki/tls/certs/ACS.crt \
--subj "/C=UK/ST=London/L=London/O=darey.io/OU=devops/CN=$(curl -s http://169.254.169.254/latest/meta-data/local-hostname)"
+-subj "/C=IN/ST=IN/L=IN/O=NA/OU=devops/CN=$(curl -s http://169.254.169.254/latest/meta-data/local-hostname)"
 
 
 sudo sed -i 's/localhost.crt/ACS.crt/g'  /etc/httpd/conf.d/ssl.conf
