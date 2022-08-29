@@ -33,7 +33,7 @@ master-username = "saikat"
 account_no = "515805452951"
 
 tags = {
-  Owner-Email     = "infradev-segun@darey.io"
+  Owner-Email     = "saikats2810@gmail.com"
   Managed-By      = "saikat-terraform"
   Billing-Account = "515805452951"
 }
